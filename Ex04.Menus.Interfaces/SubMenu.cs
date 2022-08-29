@@ -18,9 +18,9 @@ namespace Ex04.Menus.Interfaces
 
         public SubMenu(string i_Title, bool i_IsMainMenu)
         {
-            Title = i_Title;
             r_MenuItems = new List<MenuItem>();
             r_IsMainMenu = i_IsMainMenu;
+            Title = i_Title;
         }
 
         private void AddBackItemIfNeeded()
@@ -55,11 +55,11 @@ namespace Ex04.Menus.Interfaces
                 isInRange = (userInputNumber >= 0) && (userInputNumber <= r_MenuItems.Count);
                 if (!isNumber)
                 {
-                    Console.Write("Please enter a valid number");
+                    Console.Write("Please enter a valid number!");
                 }
                 else if (!isInRange)
                 {
-                    Console.Write("Number is not in range");
+                    Console.Write("Number is not in range!");
                 }
             }
 

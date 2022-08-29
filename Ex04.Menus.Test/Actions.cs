@@ -30,7 +30,7 @@ namespace Ex04.Menus.Test
         { 
             public void Invoke()
             {
-                Console.WriteLine("Version: 21.3.4.8933");
+                Console.WriteLine("Version: 22.3.4.8650");
             }
         }
 

@@ -29,7 +29,6 @@
                 m_ItemNumber = value;
             }
         }
-
         internal abstract void OnChoose();
     }
 }

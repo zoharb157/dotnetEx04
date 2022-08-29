@@ -13,15 +13,13 @@
 
             r_MainMenu.MenuItems.Add(exitItem);
         }
-
-        public void AddItem(MenuItem i_MenuItem)
-        {
-            r_MainMenu.AddItem(i_MenuItem);
-        }
-
         public void Show()
         {
             r_MainMenu.OnChoose();
+        }
+        public void AddItem(MenuItem i_MenuItem)
+        {
+            r_MainMenu.AddItem(i_MenuItem);
         }
     }
 }

@@ -4,7 +4,7 @@
     {
         public delegate void ChooseEventHandler();
         public event ChooseEventHandler Chose;
-
+         
         public ActionItem()
         {
             Chose = null;
@@ -12,8 +12,8 @@
 
         public ActionItem(string i_Title, ChooseEventHandler i_Action)
         {
-            Title = i_Title;
             Chose += i_Action;
+            Title = i_Title;
         }
 
         internal override void OnChoose()

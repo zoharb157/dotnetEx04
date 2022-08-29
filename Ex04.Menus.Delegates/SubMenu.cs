@@ -15,14 +15,12 @@ namespace Ex04.Menus.Delegates
                 return r_MenuItems;
             }
         }
-
         public SubMenu(string i_Title, bool i_IsMainMenu)
         {
             Title = i_Title;
             r_MenuItems = new List<MenuItem>();
             r_IsMainMenu = i_IsMainMenu;
         }
-
         private void AddBackItemIfNeeded()
         {
             if (r_MenuItems.Count == 0)
@@ -55,11 +53,11 @@ namespace Ex04.Menus.Delegates
                 isInRange = (userInputNumber >= 0) && (userInputNumber <= r_MenuItems.Count);
                 if (!isNumber)
                 {
-                    Console.Write("Please enter a valid number");
+                    Console.Write("Please enter a valid number!");
                 }
                 else if (!isInRange)
                 {
-                    Console.Write("Number is not in range");
+                    Console.Write("Number is not in range!");
                 }
             }
 
@@ -94,7 +92,6 @@ namespace Ex04.Menus.Delegates
                 }
             }
         }
-
         internal override void OnChoose()
         {
             if (r_MenuItems.Count != 0)

@@ -6,8 +6,8 @@
 
         public ActionItem(string i_Title, ActionInterface i_Action)
         {
-            Title = i_Title;
             r_Action = i_Action;
+            Title = i_Title;
         }
 
         internal override void OnChoose()

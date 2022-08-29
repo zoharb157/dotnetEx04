@@ -2,20 +2,6 @@
 {
     public abstract class MenuItem
     {
-        private string m_Title;
-
-        public string Title
-        {
-            get
-            {
-                return m_Title;
-            }
-            set
-            {
-                m_Title = value;
-            }
-        }
-
         private int m_ItemNumber;
 
         public int ItemNumber
@@ -30,6 +16,19 @@
             }
         }
 
+        private string m_Title;
+
+        public string Title
+        {
+            get
+            {
+                return m_Title;
+            }
+            set
+            {
+                m_Title = value;
+            }
+        }
         internal abstract void OnChoose();
     }
 }
